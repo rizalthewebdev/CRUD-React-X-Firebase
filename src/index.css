@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .table--head{
+        @apply p-2 text-center border bg-gray-800 text-white
+    }
+    .table--body{
+        @apply p-2 border bg-gray-100 border-gray-300
+    }
+    .input--field{
+        @apply outline-none border-2 border-gray-400 p-2 focus:border-gray-800 rounded-md
+    }
+    .button--submit{
+        @apply border w-32 bg-gray-800 rounded-lg p-2 mt-3 text-white hover:bg-gray-900 hover:text-white active:border active:border-gray-900
+    }
+    .action--button{
+        @apply cursor-pointer text-xl text-gray-500 hover:text-gray-900 active:text-gray-900
+    }
+}

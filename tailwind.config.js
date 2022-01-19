@@ -1,6 +1,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/@themesberg/flowbite/**/*.js",
   ],
   theme: {
     extend: {},
@@ -12,5 +13,6 @@ module.exports = {
       xl: '1440px',
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
