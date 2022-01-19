@@ -125,7 +125,7 @@ function App() {
           </div>
         </div>
         {/* Table Show Data */}
-        <div className="md:mx-10 xs:mx-5 mt-5">
+        <div className="md:mx-10 xs:mx-5 md:mt-5 xs:mt-0">
           <div className="flex flex-col">
             <h1 className="text-xl font-bold text-center mb-8">Show Data</h1>
             <table className="table-fixed border-collapse">
