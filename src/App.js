@@ -40,6 +40,7 @@ function App() {
     setPopupModal((prev) => !prev)
   }
 
+  // Show delete popup after click the action button
   const reqDelete = (id, name, age) => {
     setDestroy({id, name, age})
     setpopupDelete((prev) => !prev)
@@ -63,8 +64,8 @@ function App() {
       name: createName,
       age: Number(createAge)
     })
-    alert('User Created Successfully')
     clearInput()
+    alert('User Created Successfully')
   }
 
   // Delete user
