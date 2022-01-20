@@ -85,7 +85,7 @@ function App() {
       })))
     }
     getUsers()
-  }, [])
+  }, [users, setUsers])
 
   return (
     <div className={popupModal ? "relative inset-0 h-screen overflow-hidden" : "relative inset-0 h-screen overflow-x-hidden"}>
