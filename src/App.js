@@ -77,15 +77,12 @@ function App() {
   }
 
   // Get Data from Firebase
-  useEffect(() => {
-    const getUsers = async () => {
+  useEffect(async () => {
       const data = await getDocs(usersCollectionRef)
       setUsers(data.docs.map((doc) => ({
         ...doc.data(), id: doc.id
       })))
-    }
-    getUsers()
-  }, [usersCollectionRef])
+    }, [usersCollectionRef])
 
   return (
     <div className={popupModal ? "relative inset-0 h-screen overflow-hidden" : "relative inset-0 h-screen overflow-x-hidden"}>
